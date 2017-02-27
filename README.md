@@ -1,5 +1,7 @@
 # Skeleton dapp.
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/CraigglesO/ethstats-parity.svg)](https://greenkeeper.io/)
+
 To install:
 
 ```
