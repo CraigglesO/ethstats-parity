@@ -1,17 +1,5 @@
-# Skeleton dapp.
+# Ethstat-parity
 
-To install:
+### Ethstat port as a Parity dapp
 
-```
-$ npm install
-$ npm install -g webpack
-```
-
-To build:
-
-```
-webpack --watch
-```
-
-Files will be build into `dist/`. Just symlink that dir into your dapps path.
-
+![parity-ethstat](https://github.com/CraigglesO/ethstats-parity/blob/master/parity-ethstat.png)
