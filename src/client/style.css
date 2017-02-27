@@ -30,8 +30,9 @@ span._hash {
 	position: fixed;
 	overflow: scroll;
 	padding: 15px;
+	padding-left: 25px;
 	height: 100vh;
-	width: 340px;
+	width: 350px;
 	left: 0;
 	top: 0;
 }
@@ -39,8 +40,8 @@ span._hash {
 .graphs {
 	position: absolute;
   top: 0px;
-  left: 340px;
-  width: calc(100vw - 340px);
+  left: 355px;
+  width: calc(100vw - 355px);
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 25px;
