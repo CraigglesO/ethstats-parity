@@ -46,7 +46,6 @@ class GasLimit extends Component {
         this.history[i - 1] = n;
       });
     }
-    // console.log("HISTORY", this.history);
     history = this.history.map((n, i) => {
       const self = this;
       let v = formatValue(n);

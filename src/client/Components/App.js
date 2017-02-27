@@ -45,7 +45,6 @@ class App extends Component {
 
   history(b) {
     const self = this;
-    // console.log("HISTORY");
     for (let i = 1; i < 31; i++) {
       // Grab blocks async
       self.parity.blocks[b - i].then((block) => {
@@ -80,7 +79,6 @@ class App extends Component {
       history.shift();
     history.push(b);
     self.setState({ history, difficulty, gasLimit, gasUsed, now: Date.now() });
-    // console.log("Blocks:", history);
     return null;
   }
 

@@ -21,7 +21,6 @@ class Stats extends Component {
   }
 
   updateTime() {
-    console.log("UPDATE");
     const self = this;
     if (self.timer) {
       clearInterval(self.timer);
