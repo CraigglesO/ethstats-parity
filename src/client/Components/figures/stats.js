@@ -16,25 +16,38 @@ class Stats extends Component {
       clock:   0,
       statNow: Date.now()
     };
+    self.timer = null;
+    self.updateTime();
+  }
+
+  updateTime() {
+    console.log("UPDATE");
+    const self = this;
+    if (self.timer) {
+      clearInterval(self.timer);
+      self.timer = null;
+      self.setState({ clock: 0, statNow: Date.now() });
+    }
     self.timer = setInterval(() => {
       let c = self.state.clock;
       c++;
       self.setState({ clock: c });
     }, 1000);
   }
-  render() {
+
+  componentWillReceiveProps(nextProps) {
     const self = this;
-    let { blockNumber, difficulty, gasLimit, gasUsed, now } = self.props.store;
+    let { blockNumber, difficulty, gasLimit, gasUsed, now } = nextProps.store;
     let { clock, statNow } = self.state;
     if (statNow < now) {
-      clearInterval(self.timer);
-      self.setState({ clock: (0), statNow: Date.now() });
-      self.timer = setInterval(() => {
-        let c = self.state.clock;
-        c++;
-        self.setState({ clock: c });
-      }, 1000);
+      self.updateTime();
     }
+  }
+
+  render() {
+    const self = this;
+    let { blockNumber, difficulty, gasLimit, gasUsed } = self.props.store;
+    let { clock } = self.state;
     let clockStyle = null;
 
     if (clock >= 30)
@@ -101,11 +114,3 @@ class Stats extends Component {
 }
 
 export default Stats;
-
-// <div className="latency col-md-3">
-//   <span className="icon-clock" style={{fontFamily: "minimal-icons"}}></span>
-//   <div className="info">
-//     <div className="block-title">Block Latency</div>
-//     <Rspan style={{ position: "absolute", right: "0", bottom: "0", fontWeight: "normal", fontSize: "35px" }}>{timestamp.map(this.getLatency)}</Rspan>
-//   </div>
-// </div>

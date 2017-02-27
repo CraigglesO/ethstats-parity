@@ -95,10 +95,10 @@ class App extends Component {
         </div>
         <div className="graphs">
           <div className="col-md-6"><BlockTime    history={history} /></div>
-          <div className="col-md-6"><Difficulty   history={history} /></div>
+          <div className="col-md-6"><Transactions history={history} /></div>
           <div className="col-md-6"><GasLimit     history={history} /></div>
           <div className="col-md-6"><GasSpending  history={history} /></div>
-          <div className="col-md-6"><Transactions history={history} /></div>
+          <div className="col-md-6"><Difficulty   history={history} /></div>
           <div className="col-md-6"><UncleCount   history={history} /></div>
         </div>
       </div>

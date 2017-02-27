@@ -51,7 +51,7 @@ class Transactions extends Component {
         n = 1;
         v = 0;
       } else if (n !== 0) {
-        n = ( (n-self.low) * 100) / (self.high-self.low);
+        n = ( (n - self.low) * 100) / (self.high - self.low);
       }
       let c;
       if (v >= 75)

@@ -30,10 +30,8 @@ class Difficulty extends Component {
     const self = this;
     let { history } = this.props;
     if (history.length < 31) {
-      console.log("NOT YET");
       history = self.history;
     } else {
-      console.log("SUCCESS");
       self.high = 0;
       self.low  = Infinity;
       history.forEach((b, i) => {
