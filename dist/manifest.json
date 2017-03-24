@@ -1,8 +1,8 @@
 {
 	"id": "ethstats",
 	"name": "Ethereum Stats",
-	"description": "All active statistics about the parity blockchain",
-	"version": "0.1.0",
-	"author": "Parity Technologies Ltd",
+	"description": "Statistics about the parity blockchain",
+	"version": "0.2.0",
+	"author": "Craig Travis OConnor",
 	"iconUrl": "title.png"
 }

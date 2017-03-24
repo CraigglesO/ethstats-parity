@@ -88,10 +88,10 @@ class App extends Component {
 
     return (
       <div className="App">
-        <div className="standard-stats">
+        <div className="standard-stats col-md-3">
           <Stats store={Store} />
         </div>
-        <div className="graphs">
+        <div className="graphs col-md-9">
           <div className="col-md-6"><BlockTime    history={history} /></div>
           <div className="col-md-6"><Transactions history={history} /></div>
           <div className="col-md-6"><GasLimit     history={history} /></div>

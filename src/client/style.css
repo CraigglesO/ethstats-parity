@@ -54,6 +54,9 @@ span._hash {
 
 @media all and (max-width: 345px) {
 	.standard-stats {
+		position: relative;
 		padding: 0px;
+		overflow: auto;
+		height: auto;
 	}
 }

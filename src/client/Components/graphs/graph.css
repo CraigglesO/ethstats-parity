@@ -20,7 +20,7 @@
   background-color: #f74b4b;
   align-self: flex-end;
   width: 25px;
-  margin:0 1px;
+  margin:0 1.25px;
   display: block;
   border-top-left-radius: 1.5px;
   border-top-right-radius: 1.5px;
@@ -30,7 +30,7 @@
 .chart span:before {
   position: absolute;
   left: 0; right: 0; top: 100%;
-  padding: 0px 1px 0;
+  padding: 0px 1.25px 0;
   display: block;
   text-align: center;
 }
