@@ -48,7 +48,7 @@ class Transactions extends Component {
       const self = this;
       let v = n;
       if (self.high === self.low || n === 0) {
-        n = 1;
+        n = 2;
         v = 0;
       } else if (n !== 0) {
         n = ( (n - self.low) * 100) / (self.high - self.low);
